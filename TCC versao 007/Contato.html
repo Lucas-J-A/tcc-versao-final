@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aula </title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">O.A Lógica</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Aula.html">Aulas</a></li>
+                    <li><a href="Calculadora.html">Calculadora</a></li>
+                    <li><a href="Gerador.html">Exercícios</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+
+
+    <!--CONTACT SECTION-->
+
+
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="text-center g-pad-bottom">
+                    <div class="col-md-12 col-sm-12 alert-info">
+                        <h4> Contato </h4>
+                        <p>
+                            Mande seu feedback para nós, elogios, críticas,mudanças, sua opinião será bem vinda !
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container">
+
+
+            <form id="form1" name="form1">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" class="input_contato form-control" placeholder="Escreve seu nome" required>
+
+
+
+                </div>
+
+
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" class="input_contato form-control" placeholder="Escreve seu Email" required>
+
+
+
+
+                </div>
+
+                <label>Assunto:</label>
+                <input type="text" name="assunto" class="input_contato form-control" placeholder="Escreve o assunto" required>
+                <div>
+                    <div class="form-group">
+                        <label>Mensagem:</label>
+                        <textarea cols="5" rows="10" placeholder="Escreve sua mensagem" name="mensagem" class="form-control" required></textarea>
+
+
+
+
+                    </div>
+                    <div class="form-group left">
+
+                        <input type="submit" value="Enviar Mensagem" name="enviar" onclick="enviarEmail()" class="btn_contato btn btn-primary">
+                    </div>
+                    <div class="form-group">
+                        <input type="reset" value="Limpar Mensagem" name="limpar" class="btn_contato btn btn-primary">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <div id="footer">
+        Copyright 2016 TCC ©
+
+    </div>
+
+    <script src="assets/plugins/jquery.js"></script>
+    <script src="assets/plugins/bootstrap.min.js"></script>
+    <script src="assets/plugins/jquery.isotope.min.js"></script>
+    <script src="assets/plugins/bootbox.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        function enviarEmail() {
+
+
+            bootbox.alert("Email enviado com sucesso");
+        }
+
+    </script>
+
+</body>
+
+</html>
